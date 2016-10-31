@@ -75,7 +75,9 @@ public class OtherController {
     @RequestMapping(value = "/clearUserSession")
     public String clearUserSession(HttpServletRequest request) {
         HttpSession httpSession = request.getSession();
-        httpSession.invalidate();
+        //httpSession.invalidate();
+        httpSession.removeAttribute("now_user");
+        httpSession.removeAttribute("mess");
         return "success";
     }
 
