@@ -4,3 +4,6 @@ CREATE TABLE `t_user` (
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COMMENT='utf8_general_ci'
+
+insert into t_user (username,password) values (123,123);
+insert into t_user (username,password) values (222,222);
